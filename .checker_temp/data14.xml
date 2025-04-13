@@ -12,8 +12,8 @@
   <line>Command: /home/david/temapa/a.out /home/david/temapa/InputData/data14.in /home/david/temapa/out/data14.out</line>
 </preamble>
 
-<pid>75489</pid>
-<ppid>75449</ppid>
+<pid>76104</pid>
+<ppid>76081</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -32,13 +32,13 @@
 
 <status>
   <state>RUNNING</state>
-  <time>00:00:00:00.074 </time>
+  <time>00:00:00:00.068 </time>
 </status>
 
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:01.202 </time>
+  <time>00:00:00:01.218 </time>
 </status>
 
 <errorcounts>
