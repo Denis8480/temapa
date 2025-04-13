@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: /home/david/temapa/a.out /home/david/temapa/InputData/data9.in /home/david/temapa/out/data9.out</line>
+</preamble>
+
+<pid>75491</pid>
+<ppid>75449</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--leak-check=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/david/temapa/.checker_temp/data9.xml</arg>
+  </vargv>
+  <argv>
+    <exe>/home/david/temapa/a.out</exe>
+    <arg>/home/david/temapa/InputData/data9.in</arg>
+    <arg>/home/david/temapa/out/data9.out</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.050 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:01.172 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
