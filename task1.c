@@ -83,22 +83,13 @@ char **generatie_urmatoare(char **mat, int n, int m)
         {
             int v = calc_vecini(mat, n, m, i, j);
             if (mat[i][j] == 'X')
-            {
-                if (v < 2 || v > 3)
-                    temp[i][j] = '+';
-                else
-                    temp[i][j] = 'X';
-            }
+                temp[i][j] = (v < 2 || v > 3) ? '+' : 'X';
             else
-            {
-                if (v == 3)
-                    temp[i][j] = 'X';
-                else
-                    temp[i][j] = '+';
-            }
+                temp[i][j] = (v == 3) ? 'X' : '+';
         }
     return temp;
 }
+
 void afisare(char **mat, int n, const char *nume)
 {
     FILE *fisier = fopen(nume, "a");
