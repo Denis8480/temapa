@@ -23,18 +23,18 @@ Se foloseste un compilator standard C. Exemplu cu gcc:
     +XX++
     +++X+
     +++++
-- T – numarul taskului
-- N si M – dimensiuni grila
-- K – numar generatii (sau adancime arbore)
+- T â€“ numarul taskului
+- N si M â€“ dimensiuni grila
+- K â€“ numar generatii (sau adancime arbore)
 - matrice cu + (celula moarta) si X (vie)
 ## Structura proiectului
 Tot codul este scris intr-un singur fisier: main.c, dar este modularizat folosind functii si structuri dedicate.
 ### Structuri de date
-- Coord – coordonatele unei celule
-- List, Node – lista ordonata pentru modificari pe generatii
-- Stack, StackNode – stiva pentru taskul 2
-- ArboreNode – nod in arborele binar de evolutie
-- Graf – structura pentru reprezentarea celulelor vii ca graf (task 4)
+- Coord â€“ coordonatele unei celule
+- List, Node â€“ lista ordonata pentru modificari pe generatii
+- Stack, StackNode â€“ stiva pentru taskul 2
+- ArboreNode â€“ nod in arborele binar de evolutie
+- Graf â€“ structura pentru reprezentarea celulelor vii ca graf (task 4)
 ## Functii principale
 | Functie                | Descriere                                                              |
 |------------------------|------------------------------------------------------------------------|
@@ -46,17 +46,17 @@ Tot codul este scris intr-un singur fisier: main.c, dar este modularizat folosin
 | matrice_in_graf()      | transforma o matrice intr-un graf pe celule vii                       |
 | cel_mai_lung_lant()    | cauta cel mai lung lant Hamiltonian (task 4)                          |
 ## Exemple de output
-### Task 2 – Stiva cu modificari
+### Task 2 â€“ Stiva cu modificari
     1 1 2 3 2 3 3
     2 2 1 2 2 2 3 3 1
-### Task 4 – Lant Hamiltonian
+### Task 4 â€“ Lant Hamiltonian
     4
     (1,1) (2,2) (3,2) (3,3) (2,3)
 ## Observatii pentru dezvoltatori
 Matricile sunt alocate dinamic, deci codul poate lucra cu orice dimensiune (limitat doar de RAM).  
 Codul e organizat modular, deci se poate separa cu usurinta in fisiere:
     stack.c, arbore.c, grafuri.c, etc.
-Nu s-au folosit librarii externe – codul e pur C standard.
+Nu s-au folosit librarii externe â€“ codul e pur C standard.
 ## Extensii posibile
 - Interfata vizuala (cu SDL sau ncurses)
 - Detectarea automata a ciclurilor in evolutie
